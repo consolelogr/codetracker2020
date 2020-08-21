@@ -1,0 +1,22 @@
+input {
+  color: #222;
+  width: 10rem;
+  background: #eee;
+}
+form {
+  color: #eee;
+  text-align: left;
+  min-width: 20rem;
+}
+.labelbox {
+  min-width: 7rem;
+  float: left;
+}
+label {
+  color: #777;
+  text-shadow: 1px 1px rgba(0, 255, 255, 0.1);
+  padding: 1vh 3vw 0 0vh;
+  border-radius: 1vw 1vw 0 0;
+  min-width: 20rem;
+  width: 20rem;
+}
