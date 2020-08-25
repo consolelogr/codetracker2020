@@ -1,6 +1,17 @@
 import React from "react";
 import "./itemform.css";
 
+/*
+function ItemForm(itemformpropsii, itemformpropsii2) {
+  console.log(
+    "// func Itemform:",
+    itemformpropsii.itemformpropsii,
+    itemformpropsii2
+  );
+  return <h1>itemform</h1>;
+}
+*/
+
 class ItemForm extends React.Component {
   constructor(props) {
     super(props);
@@ -8,15 +19,21 @@ class ItemForm extends React.Component {
       data: {
         koodityyppi: "css",
         pvm: "2020 01 01",
-        kooditunnit: "2h",
-        tehot: "0%",
+        kooditunnit: 2,
+        tehot: 0,
       },
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    console.log(
+      "// I.F. constructor propsii:",
+      this.props.itemformpropsii[0].name,
+      this.props.hfm
+    );
   }
 
   handleInputChange(event) {
+    // handle individual changes to state of ITEMFORMS.js
     console.log(
       "//Itemform - handleInputChange, event.target.value:",
       event.target.value,
@@ -36,13 +53,25 @@ class ItemForm extends React.Component {
     // Kun painaa lähetä nappia add.js :ssä tämä käynnistyy
     event.preventDefault();
     console.log(
-      "itemform - handleSubmit, state:",
+      "itemform - handleSubmit, state:, event:",
       this.state.data,
-      "props:",
-      this.props
+      event,
+      "// ItemForm:  propsit:",
+      this.state
     );
-    console.log("// pvmdata:", this.state.data.pvm);
-    this.handleFormSubmit(this.state.data);
+    console.log(
+      "// pvmdata:",
+      this.state.data.pvm
+
+      //                 READ REACT BOOK FIRST
+      //
+      //                        THEN CODE
+      //
+      //                    => GOOD RESULTS
+      //
+      //                      OK?
+    );
+    this.props.hfm(this.state.data);
   }
 
   render() {
@@ -81,14 +110,14 @@ class ItemForm extends React.Component {
           value={this.state.data.kooditunnit}
           onChange={this.handleInputChange}
         >
-          <option value="1h">1h</option>
-          <option value="2h">2h</option>
-          <option value="3h">3h</option>
-          <option value="4h">4h</option>
-          <option value="5h">5h</option>
-          <option value="6h">6h</option>
-          <option value="7h">7h</option>
-          <option value="8h">8h</option>
+          <option value="1">1h</option>
+          <option value="2">2h</option>
+          <option value="3">3h</option>
+          <option value="4">4h</option>
+          <option value="5">5h</option>
+          <option value="6">6h</option>
+          <option value="7">7h</option>
+          <option value="8">8h</option>
         </select>
         <br />
         <div className="labelbox">
@@ -99,17 +128,17 @@ class ItemForm extends React.Component {
           value={this.state.data.tehot}
           onChange={this.handleInputChange}
         >
-          <option value="0%">0%</option>
-          <option value="10%">10%</option>
-          <option value="20%">20%</option>
-          <option value="30%">30%</option>
-          <option value="40%">40%</option>
-          <option value="50%">50%</option>
-          <option value="60%">60%</option>
-          <option value="70%">70%</option>
-          <option value="80%">80%</option>
-          <option value="90%">90%</option>
-          <option value="100%">100%</option>
+          <option value="0">0%</option>
+          <option value={0.1 * this.state.data.kooditunnit}>10%</option>
+          <option value={0.2 * this.state.data.kooditunnit}>20%</option>
+          <option value={0.3 * this.state.data.kooditunnit}>30%</option>
+          <option value={0.4 * this.state.data.kooditunnit}>40%</option>
+          <option value={0.5 * this.state.data.kooditunnit}>50%</option>
+          <option value={0.6 * this.state.data.kooditunnit}>60%</option>
+          <option value={0.7 * this.state.data.kooditunnit}>70%</option>
+          <option value={0.8 * this.state.data.kooditunnit}>80%</option>
+          <option value={0.9 * this.state.data.kooditunnit}>90%</option>
+          <option value={1 * this.state.data.kooditunnit}>100%</option>
         </select>
         <br />
         <br />
@@ -119,5 +148,4 @@ class ItemForm extends React.Component {
     ); //return end
   }
 }
-
 export default ItemForm;

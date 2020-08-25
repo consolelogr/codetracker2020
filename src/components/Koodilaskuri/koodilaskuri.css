@@ -1,44 +1,40 @@
-.box{
-    overflow:auto ;
-    overflow-x: hidden;
-    scrollbar-color: light;
-    min-height: 40vh;
-    max-height: 40vh;
+.box {
+  width: 42rem;
+  overflow: auto;
+  scrollbar-color: #222;
+  max-height: 15rem;
+  min-height: 15rem;
+  padding: 1rem;
+}
+.rivitbox {
+  font-size: 1rem;
+  padding: 0.2rem;
+  width: 35rem;
+  padding-left: 0vw;
 
+  color: #777;
+  text-align: center;
 }
-.rivitbox{
-    font-size: 2.5vh;
-    padding: 2vh;
-    width: 50vw;
-    padding-left: 0vw;
-    
-    color: #777;
-text-align: center;
-border-bottom: 1px solid;
-
+.tyyppi {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  margin-right: 0vw;
+  min-width: 10rem;
+  max-width: 10rem;
+  margin-left: 0rem;
+  overflow: hidden;
+  padding: 0.5vw;
 }
-.tyyppi{
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    color: #777;
-    margin-right: 0vw;
-    min-width: 15vw;
-    max-width: 15vw;
-    margin-left: 2vw;
-    overflow: hidden;
-    padding: 0.5vw;
-    
-
+.tehot {
+  padding: 1.1vh;
 }
-.tehot{
-padding: 1.1vh;
-}
-.tyyppi_info{
-    float: left;
-    padding: 0.5vw;
-    margin: 0 0 0 5vh;   
-text-align: center;
+.tyyppi_info {
+  float: left;
+  padding: 0.5vw;
+  margin: 0 0 0 5vh;
+  text-align: center;
 }
 /*@media screen and   (700px){
 .tyyppi_info{

@@ -1,11 +1,34 @@
-
-
 const testdata = [
-    {name: 'html', hours: 1, pvm: "01/06/2019", tehot: "10%", fill: 'red'},
-    {name: 'css',  hours: 4, pvm: "01/06/2019", tehot: "20%",fill: '#83a6ed'},
-    {name: 'js' , hours: 1, pvm: "01/06/2019", tehot: "30%",fill: '#8dd1e1'},
-    {name: 'React', hours: 8, pvm: "01/06/2014", tehot: "40%",fill: '#82ca9d'},
-    {name: 'Git', hours: 8, pvm: "01/06/2019", tehot: "50%",fill: '#a4de6c'},
-  ];
+  {
+    koodityyppi: "html",
+    kooditunnit: 1,
+    pvm: "01/06/2019",
+    tehot: 0.4,
+  },
+  {
+    koodityyppi: "css",
+    kooditunnit: 4,
+    pvm: "01/06/2019",
+    tehot: 2,
+  },
+  {
+    koodityyppi: "js",
+    kooditunnit: 1,
+    pvm: "01/06/2019",
+    tehot: 0.7,
+  },
+  {
+    koodityyppi: "React",
+    kooditunnit: 8,
+    pvm: "01/06/2014",
+    tehot: 2,
+  },
+  {
+    koodityyppi: "Git",
+    kooditunnit: 8,
+    pvm: "01/06/2019",
+    tehot: 4,
+  },
+];
 
 export default testdata;

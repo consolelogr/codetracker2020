@@ -2,16 +2,22 @@ import React from "react";
 import "./koodilaskuri.css";
 //import testdata from "../testdata.js";
 
-function Koodilaskuri(koodipropsii) {
-  console.log("propsii", koodipropsii.koodipropsii);
+function Koodilaskuri(koodipropsii, koodipropsii2) {
+  console.log(
+    "// Koodilaskuri   propsii",
+    koodipropsii.koodipropsii,
+    koodipropsii2
+  );
   let propstesti = koodipropsii.data;
-  let rivit = koodipropsii.koodipropsii.map((jotain) => {
+  let rivit = koodipropsii.koodipropsii.reverse().map((jotain) => {
     return (
       <div className="rivitbox">
-        <div className="tyyppi">{jotain.name}</div>
+        <div className="tyyppi">{jotain.koodityyppi}</div>
         <div className="tyyppi_info"> {jotain.pvm}</div>
-        <div className="tyyppi_info"> {jotain.hours}h </div>
-        <div className="tyyppi_info"> &#64; {jotain.tehot}</div>
+        <div className="tyyppi_info"> {jotain.kooditunnit}h </div>
+        <div className="tyyppi_info">
+          {(jotain.tehot / jotain.kooditunnit) * 100}%
+        </div>
         <br></br>
       </div>
     );
