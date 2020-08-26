@@ -76,6 +76,7 @@ class ItemForm extends React.Component {
 
   render() {
     return (
+      <div className="inputwrap" >
       <form onSubmit={this.handleSubmit}>
         <div className="labelbox">
           <label name="koodityyppi">Koodityyppi</label>
@@ -89,7 +90,7 @@ class ItemForm extends React.Component {
           <option value="css">css</option>
           <option value="js">js</option>
           <option value="react">react</option>
-          <option value="php">php</option>
+          <option value="git">git</option>
         </select>
         <br />
         <div className="labelbox">
@@ -142,9 +143,12 @@ class ItemForm extends React.Component {
         </select>
         <br />
         <br />
+        <div className="buttonbox"> 
         <button type="submit">Lisää</button>
         <button>Peruuta</button>
+        </div>
       </form>
+      </div>
     ); //return end
   }
 }

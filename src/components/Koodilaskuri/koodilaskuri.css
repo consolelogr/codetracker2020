@@ -5,11 +5,28 @@
   max-height: 15rem;
   min-height: 15rem;
   padding: 1rem;
+  overflow-x: hidden;
+  --moz-scrollbar-color: red;
+  scrollbar-width: thin;  
+  scrollbar-color: #222d #2224;   
+}
+´
+ ::-webkit-scrollbar{
+   width: 12px;
+ }
+::-webkit-scrollbar-track {
+  background: #2224;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #222d;
+  border-radius: 20px;
+  border: 3px solid #2224;
 }
 .rivitbox {
+  margin-left: 0rem;
   font-size: 1rem;
   padding: 0.2rem;
-  width: 35rem;
+  width: 30rem;
   padding-left: 0vw;
 
   color: #777;
@@ -21,17 +38,19 @@
   justify-content: space-between;
   color: #777;
   margin-right: 0vw;
-  min-width: 10rem;
-  max-width: 10rem;
+  min-width: 7rem;
+  max-width: 7rem;
   margin-left: 0rem;
   overflow: hidden;
   padding: 0.5vw;
 }
 .tehot {
+  min-width: 10%;
   padding: 1.1vh;
 }
 .tyyppi_info {
   float: left;
+  min-width: 10%;
   padding: 0.5vw;
   margin: 0 0 0 5vh;
   text-align: center;

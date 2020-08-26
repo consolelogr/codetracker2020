@@ -6,6 +6,13 @@ const testdata = [
     tehot: 0.4,
   },
   {
+    koodityyppi: "html",
+    kooditunnit: 4,
+    pvm: "01/06/2019",
+    tehot: 1.4,
+  },
+  
+  {
     koodityyppi: "css",
     kooditunnit: 4,
     pvm: "01/06/2019",

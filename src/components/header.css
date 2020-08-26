@@ -1,0 +1,18 @@
+h1{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1.5rem;
+}
+
+.App-header{
+  
+  background: linear-gradient(to right,#2220, #2229,#2220);
+  box-shadow: 0 0 2rem #fff;
+    clip-path: polygon(
+      0 0, /* left top */
+      100% 0, /* right top */ 
+      100% 100%, /* right bottom */
+      0 80% /* left bottom */
+    );
+  
+}

@@ -9,7 +9,8 @@ import Header from "./components/Header.js";
 import Koodilaskuri from "./components/Koodilaskuri/Koodilaskuri";
 import Menu from "./components/Menu/Menu.js";
 import testdata from "./components/testdata";
-
+import "./components/header.css";
+ 
 //https://react-icons.netlify.com/#/icons/io  <-- tuolta löytyy ikonit
 
 class App extends Component {
@@ -36,8 +37,8 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="wrap">
           <Header />
+        <div className="wrap">
 
           <div className="box">
             <Route

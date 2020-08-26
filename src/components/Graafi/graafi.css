@@ -1,2 +1,16 @@
 .box {
+  min-height: 20rem;
+  width: 30rem;
+}
+
+.recharts-layer{
+  background: pink;
+} 
+
+.recharts-rectangle{
+width: 0.1rem;
+}
+
+.baarit{
+  width: 30rem;
 }

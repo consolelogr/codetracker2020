@@ -15,14 +15,13 @@ body{
   opacity: 0.1;
 }
 h1{
-  margin-left: -4vw;
   color: red;
   text-align:center;
-  margin-top: -2vh;
+  margin-top: -2rem;
   text-shadow: -3px 0px  orange, 1px 0 #ddd, 0 3px lightblue;
-  font-size: 7vh;
+  font-size: 3rem;
   font-family: 'Orbitron', sans-serif;
-  transform: rotate(-2deg);
+  transform: rotate(-0.2deg);
   padding: 5vh;
 }
 
@@ -35,16 +34,19 @@ h4{
   margin-bottom: 5vh;
 }
 #spanni{
-  font-size: 3.5rem;
+  font-size: 3rem;
+  padding-left: 0.4rem;
+  padding-right: 0.5rem;
+  font-weight: 700;
   margin-bottom: -5rem;
-  color: orange;
+  color: red;
 }
 
 .wrap{
-  min-width: 50vw;
-  max-width: 50vw;
+  min-width: 30rem;
+  max-width: 30rem;
   max-height: 50vh;
-  padding: 2vw;
+  padding: 1rem;
   margin: 0 auto;
   font-size: 2vh;
   font-family: monospace, 'Orbitron', sans-serif;    
