@@ -1,6 +1,7 @@
 
 .inputwrap{
-width: 25rem;
+font-size: 0.8rem;
+  width: 25rem;
 margin-left:1.5rem;
 margin-top: 1rem;
 padding: 3rem;
@@ -31,8 +32,8 @@ form {
 label {
   color: #777;
   text-shadow: 1px 1px rgba(0, 255, 255, 0.1);
-  padding: 1vh 3vw 0 0vh;
-  border-radius: 1vw 1vw 0 0;
+  padding: 1rem 3rem 0 0;
+  border-radius: 1rem 1rem 0 0;
   min-width: 20rem;
 }
 
@@ -40,7 +41,7 @@ label {
 
 }
 button{
-  width: 9rem;;
+  width: 9rem;
   padding: 0.2rem;
   margin-right: 1rem;
   font-size: 0.8rem;

@@ -55,15 +55,17 @@ h4{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1900px) {
 
-  h4{
-}
-h1{
-  margin-left: 0vw;
-}
-.wrap{
-  max-width: 50vw;
+ html, body{
+   font-size: 20px;
+ }
 }
 
-}
+@media only screen and (min-width: 4000px) {
+
+  html, body{
+    font-size: 36px;
+  }
+ }
+ 

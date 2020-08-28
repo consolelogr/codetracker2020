@@ -23,36 +23,37 @@
   border: 3px solid #2224;
 }
 .rivitbox {
-  margin-left: 0rem;
+  margin-left: 3.5rem;
   font-size: 1rem;
   padding: 0.2rem;
   width: 30rem;
-  padding-left: 0vw;
-
   color: #777;
-  text-align: center;
+  text-align: left;
 }
 .tyyppi {
   float: left;
-  display: flex;
-  justify-content: space-between;
   color: #777;
-  margin-right: 0vw;
-  min-width: 7rem;
-  max-width: 7rem;
-  margin-left: 0rem;
-  overflow: hidden;
-  padding: 0.5vw;
+  min-width: 6rem;
+  max-width: 6rem;
 }
-.tehot {
-  min-width: 10%;
-  padding: 1.1vh;
+.tyyppi_tehot {
+  float: left;
+  min-width: 1rem;
+  max-width: 1rem;
 }
 .tyyppi_info {
   float: left;
-  min-width: 10%;
-  padding: 0.5vw;
-  margin: 0 0 0 5vh;
+  min-width: 2rem;
+  max-width: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.tyyppi_pvm {
+  float: left;
+  min-width: 6rem;
+  max-width: 6rem;
+  margin-right: 2.5rem;
   text-align: center;
 }
 /*@media screen and   (700px){

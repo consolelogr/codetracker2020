@@ -13,12 +13,12 @@ function Koodilaskuri(koodipropsii, koodipropsii2) {
     return (
       <div className="rivitbox">
         <div className="tyyppi">{jotain.koodityyppi}</div>
-        <div className="tyyppi_info"> {jotain.pvm}</div>
+        <div className="tyyppi_pvm"> {jotain.pvm}</div>
         <div className="tyyppi_info"> {jotain.kooditunnit}h </div>
-        <div className="tyyppi_info">
+        <div className="tyyppi_tehot">
           {(jotain.tehot / jotain.kooditunnit) * 100}%
         </div>
-        <br></br>
+        <br />
       </div>
     );
   });
