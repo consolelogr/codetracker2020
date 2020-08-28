@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {Redirect, HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import "./components/Koodilaskuri/koodilaskuri.css";
 import Add from "./components/Add/Add.js";
@@ -36,7 +36,8 @@ class App extends Component {
     //App.js returns this thing below
 
     return (
-      <Router>
+      <HashRouter basename='/'>
+<Redirect to="/koodilaskuri" />
           <Header />
         <div className="wrap">
 
@@ -74,7 +75,7 @@ class App extends Component {
           </div>
           <Menu />
         </div>
-      </Router>
+      </HashRouter>
     );
   } //And stops rendering right here. It sticks it in Index.js -> /public/index.html -> root div
 }
