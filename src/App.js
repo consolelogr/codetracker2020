@@ -35,7 +35,7 @@ class App extends Component {
     //App.js returns this thing below
 
     return (
-      <Router basename='/'>
+      <HashRouter basename='/'>
 <Redirect to="/koodilaskuri" />
           <Header />
         <div className="wrap">
@@ -74,7 +74,7 @@ class App extends Component {
           </div>
           <Menu />
         </div>
-      </Router>
+      </HashRouter>
     );
   } //And stops rendering right here. It sticks it in Index.js -> /public/index.html -> root div
 }
