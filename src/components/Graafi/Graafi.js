@@ -16,28 +16,28 @@ function Graafi(koodipropsii) {
 
   for (var i = 0; i <= propsii.length - 1; i++) {
     
-      if (propsii[i].koodityyppi == "html") {
+      if (propsii[i].koodityyppi === "html") {
       htmltunnit += Number.parseInt(propsii[i].kooditunnit);
       htmltehot +=  Number.parseFloat(propsii[i].tehot);
       console.log("// html", htmltunnit,htmltehot);
     }
 
-    if (propsii[i].koodityyppi == "css") {
+    if (propsii[i].koodityyppi === "css") {
       csstunnit += Number.parseInt(propsii[i].kooditunnit);
       csstehot +=  Number.parseFloat(propsii[i].tehot);
       console.log("// css", csstunnit,csstehot);
     }
-    if (propsii[i].koodityyppi == "react") {
+    if (propsii[i].koodityyppi === "react") {
       reacttunnit += Number.parseInt(propsii[i].kooditunnit);
       reacttehot +=  Number.parseFloat(propsii[i].tehot);
       console.log("// html", reacttunnit,reacttehot);
     }
-    if (propsii[i].koodityyppi == "js") {
+    if (propsii[i].koodityyppi === "js") {
       jstunnit += Number.parseInt(propsii[i].kooditunnit);
       jstehot +=  Number.parseFloat(propsii[i].tehot);
       console.log("// js", jstunnit,jstehot);
     }
-    if (propsii[i].koodityyppi == "git") {
+    if (propsii[i].koodityyppi === "git") {
       gittunnit += Number.parseInt(propsii[i].kooditunnit);
       gittehot +=  Number.parseFloat(propsii[i].tehot);
       console.log("// git", gittunnit,gittehot);
