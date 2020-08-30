@@ -36,7 +36,7 @@ class App extends Component {
 
     return (
       <HashRouter basename='/'>
-<Redirect to="/koodilaskuri" />
+      <Redirect to="/koodilaskuri" />
           <Header />
         <div className="wrap">
 
