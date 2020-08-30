@@ -9,11 +9,9 @@ function Menu(props) {
   return (
     <div className="menu">
       <Link to="/Koodilaskuri">
-        {" "}
-        <div className="nappi">
-          {" "}
+        <button className="nappi">
           <IoMdList />{" "}
-        </div>{" "}
+        </button>
       </Link>
       <Link to="./ItemForm">
         {" "}

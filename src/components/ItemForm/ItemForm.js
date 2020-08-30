@@ -17,14 +17,15 @@ class ItemForm extends React.Component {
     super(props);
     this.state = {
       data: {
-        koodityyppi: "css",
+        koodityyppi: "html",
         pvm: "2020 01 01",
-        kooditunnit: 2,
-        tehot: 0,
+        kooditunnit: 1,
+        tehot: 0.1,
       },
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onClickReset = this.onClickReset.bind(this);
     console.log(
       "// I.F. constructor propsii:",
       this.props.itemformpropsii[0].name,
@@ -72,8 +73,28 @@ class ItemForm extends React.Component {
       //                      OK?
     );
     this.props.hfm(this.state.data);
-  }
+    
+    console.log('//lisää');
+        document.getElementById('lisaa').className= 'lisaa2';
+        document.getElementById('lisaa').innerHTML= 'Lisätty';
+      document.getElementById('lisaa').disabled = true;
+      setTimeout(function(){
 
+    }, 100);
+  }
+  onClickReset(){
+    this.setState({ data: {
+      koodityyppi: "html",
+      pvm: "1976 01 01",
+      kooditunnit: 1,
+      tehot: 0.1,
+     } });
+     document.getElementById('lisaa').disabled = false;
+     document.getElementById('lisaa').className= ('lisaa');
+     
+     document.getElementById('lisaa').innerHTML= 'Lisää';
+  }
+  
   render() {
     return (
       <div className="inputwrap" >
@@ -129,7 +150,6 @@ class ItemForm extends React.Component {
           value={this.state.data.tehot}
           onChange={this.handleInputChange}
         >
-          <option value="0">0%</option>
           <option value={0.1 * this.state.data.kooditunnit}>10%</option>
           <option value={0.2 * this.state.data.kooditunnit}>20%</option>
           <option value={0.3 * this.state.data.kooditunnit}>30%</option>
@@ -144,8 +164,8 @@ class ItemForm extends React.Component {
         <br />
         <br />
         <div className="buttonbox"> 
-        <button type="submit">Lisää</button>
-        <button>Peruuta</button>
+        <button type="submit" id="lisaa" >Lisää</button>
+        <button type="reset" onClick={this.onClickReset}>Reset</button>
         </div>
       </form>
       </div>

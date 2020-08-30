@@ -41,6 +41,7 @@ label {
 
 }
 button{
+  color: #222;
   width: 9rem;
   padding: 0.2rem;
   margin-right: 1rem;
@@ -49,4 +50,23 @@ button{
   text-shadow: 0 0 0.9rem #fff;
   font-weight: 700;
   background: linear-gradient(270deg, #eee8, #9993 );
+}
+
+.lisaa2{
+  transition: all 1s;
+  color: orange;
+  border: groove #222 0.2rem;
+  box-shadow: 0rem 0rem 0 0.3rem #2228;
+  transform: rotate(360deg);
+}
+.lisaa3{
+  transition: all 1s;
+  color: blue;
+}
+
+
+.lisaa{
+  transition: all 1s;
+  
+  color: #222;
 }
